@@ -4,6 +4,8 @@ weight: 1
 chapter: false
 ---
 
+# Integrate API Gateway with frontend hosted in S3
+
 In previous workshops, you have:
 
 - Created Lambda functions and invoked them directly via function URLs.

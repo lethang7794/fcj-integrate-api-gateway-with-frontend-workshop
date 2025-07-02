@@ -1,5 +1,5 @@
 ---
-title: "Configure CORS for `/users` resource"
+title: "Configure CORS for /users resource"
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
