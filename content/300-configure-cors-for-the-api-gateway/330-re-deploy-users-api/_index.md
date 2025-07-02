@@ -5,6 +5,14 @@ chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-### TODO: Section 3.3 - heading
+After enable CORS for `/users` and `/users/{userId}` resources, you need to re-deploy the API so the new settings is applied in your `dev` stage.
 
-TODO: Section 3.3 - content
+- Go to the `Resources` section of the `UsersAPI`.
+- Click `Deploy API`.
+
+  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--redeploy-button.png)
+
+- Choose the `dev` stage (that you've created).
+- Click `Deploy`.
+
+  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--redeploy-stage.png)

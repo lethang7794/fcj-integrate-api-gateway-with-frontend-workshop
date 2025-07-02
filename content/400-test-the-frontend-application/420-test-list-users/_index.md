@@ -5,6 +5,8 @@ chapter: false
 pre: " <b> 4.2 </b> "
 ---
 
-### TODO: Section 4.2 - heading
+- In the previous step, you've just created 3 users.
+- Go back to your frontend application (at <http://localhost:5173/>).
+- Refresh the page (press `F5` or click `Refresh` button) and verify that these 3 users are still showing.
 
-TODO: Section 4.2 - content
+  ![alt text](/images/workshop-3/frontend-app--test-list-users.png)

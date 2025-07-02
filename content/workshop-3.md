@@ -9,166 +9,21 @@ weight: 11
 
 ## Configure CORS for the API Gateway
 
-- Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-- In the list of the APIs, click on the name of the API (`UsersAPI`).
-
-  ![alt text](/images/workshop-3/API-Gateway--list-APIs.png)
-
-- You will be redirected to the _Resources_ section of the `UsersAPI`.
-
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--resources.png)
-
 ### Configure CORS for `/users` resource
-
-- Select the `/users` resource.
-- Click `Enable CORS`.
-
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS.png)
-
-- In the `Enable CORS` page - `CORS Settings` section:
-
-  - For `Access-Control-Allow-Methods`, select `GET` and `POST`.
-  - Click `Save`.
-
-    ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--CORS-settings.png)
-
-- Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
-
-  - Created `OPTIONS` method ...
-  - Added `Access-Control-Allow-Origin` to the `GET`/`POST` method:
-
-    - Method Response Header
-    - Integration Response Header Mapping
-
-    ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS-detail.png)
 
 ### Configure CORS for `/users/{userId}` resource
 
-- Go to the `Resources` section of the `UsersAPI`.
-- Select the `/users/{userId}` resource.
-- Click `Enable CORS`.
-
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users-userId--enable-CORS.png)
-
-- In the `Enable CORS` page - `CORS Settings` section:
-
-  - For `Access-Control-Allow-Methods`, select `GET`, `DELETE`, `POST`.
-  - Click `Save`.
-
-    ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users-userId--CORS-settings.png)
-
-- Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
-
-  - Created `OPTIONS` method ...
-  - Added `Access-Control-Allow-Origin` to the `GET`/`DELETE`/`POST` method:
-
-    - Method Response Header
-    - Integration Response Header Mapping
-
 ### Re-deploy `UsersAPI`
-
-After enable CORS for `/users` and `/users/{userId}` resources, you need to re-deploy the API so the new settings is applied in your `dev` stage.
-
-- Go to the `Resources` section of the `UsersAPI`.
-- Click `Deploy API`.
-
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--redeploy-button.png)
-
-- Choose the `dev` stage (that you've created).
-- Click `Deploy`.
-
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--redeploy-stage.png)
 
 ## Test the frontend application
 
-- Now you can go back to your frontend application at <http://localhost:5173/>.
-
-- Open `Inspect`, in `Console` tab, verify that there is no error about CORS.
-
-  ![alt text](/images/workshop-3/frontend-app--no-CORS-error.png)
-
-- Now you can test your frontend application.
-
 ### Test create new user
-
-- Create a user with name of `Bill Gates` and email of `bill@gates.com`.
-
-  - Click `Add user`.
-
-    ![alt text](/images/workshop-3/frontend-app--test-create-user.png)
-
-  - Enter:
-
-    - `Name`: `Bill Gates`
-    - `Email`: `bill@gates.com`
-
-  - Click `Create`
-
-    ![alt text](/images/workshop-3/frontend-app--test-create-user--confirm.png)
-
-  - You should see the new user in the list.
-
-    ![alt text](/images/workshop-3/frontend-app--test-create-user--user-created.png)
-
-- Repeat this step to create 2 other users:
-
-  - A user with name of `Steve Jobs` and email of `steve@jobs.com`.
-  - A user with name of `Jeff Bezos` and email of `jeff@bezos.com`.
-
-- You should see 3 users in the list.
-
-  ![alt text](/images/workshop-3/frontend-app--test-create-user--three-users-created.png)
 
 ### Test list users
 
-- In the previous step, you've just created 3 users.
-- Go back to your frontend application (at <http://localhost:5173/>).
-- Refresh the page (press `F5` or click `Refresh` button) and verify that these 3 users are still showing.
-
-  ![alt text](/images/workshop-3/frontend-app--test-list-users.png)
-
 ### Test update user
 
-- Go back to your frontend application (at <http://localhost:5173/>).
-- In the list of users, on the row of the user with `Bill Gates` name, click the `Action` button (the three dots at the end of the row).
-- Click `Edit`.
-
-  ![alt text](/images/workshop-3/frontend-app--test-update-user.png)
-
-- Type in the new information:
-
-  - Name: `William Henry Gates III`.
-  - Email: `bill@microsoft.com`.
-
-- Click `Save`.
-
-  ![alt text](/images/workshop-3/frontend-app--test-create-user--confirm.png)
-
-- You should see the updated user in the users list.
-
-  ![alt text](/images/workshop-3/frontend-app--test-create-user--user-updated.png)
-
-- Refresh the page and verify that the updated user is still persistent.
-
 ### Test delete user
-
-- Go back to your frontend application (at <http://localhost:5173/>).
-- In the list of users, on the row of the user with `William Henry Gates III` name, click the `Action` button (the three dots at the end of the row).
-- Click `Delete`.
-
-  ![alt text](/images/workshop-3/frontend-app--test-delete-user.png)
-
-- Enter the email of that user `bill@microsoft.com` in the input.
-- Click Delete.
-
-  ![alt text](/images/workshop-3/frontend-app--test-delete-user--confirm.png)
-
-- You should see the deleted user is no longer existed in the users list.
-
-  ![alt text](/images/workshop-3/frontend-app--test-create-user--user-deleted.png)
-
-> [!NOTE]
-> Now you can be sure that the frontend works as expected, but it's still running on your local machine at <http://localhost:5173/>.
 
 ## Store frontend application bundle in a S3 bucket
 
