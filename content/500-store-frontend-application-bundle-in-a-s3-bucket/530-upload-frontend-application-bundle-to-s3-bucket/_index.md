@@ -1,5 +1,5 @@
 ---
-title: "TODO: Section 5.3 - title"
+title: "Upload frontend application bundle to S3 bucket"
 weight: 1
 chapter: false
 pre: " <b> 5.3 </b> "

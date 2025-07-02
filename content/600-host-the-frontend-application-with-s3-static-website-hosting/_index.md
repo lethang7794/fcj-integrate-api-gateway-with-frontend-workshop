@@ -1,5 +1,5 @@
 ---
-title: "TODO: Section 6 - title"
+title: "Host the frontend application with S3 static website hosting"
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "

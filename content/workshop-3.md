@@ -243,7 +243,7 @@ After enable CORS for `/users` and `/users/{userId}` resources, you need to re-d
 
   ![alt text](/images/workshop-3/s3--create-bucket--bucket-detail.jpg)
 
-### Upload frontend application bundle to S3
+### Upload frontend application bundle to S3 bucket
 
 - Open the detail page of your S3 bucket `fcj-hall-of-fame`.
 
