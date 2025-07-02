@@ -5,6 +5,37 @@ chapter: false
 pre: " <b> 6.2.2 </b> "
 ---
 
-## TODO: Section 6.2.2 - heading
+- In the detail page of your S3 bucket, open `Permissions` tab.
+- Under `Bucket policy` section, click `Edit`.
 
-TODO: Section 6.2.2 - content
+  ![alt text](/images/workshop-3/s3-bucket--permisions--bucket-policy.png)
+
+- In the `Edit bucket policy` page, fill in the `Policy`:
+
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "PublicReadGetObject",
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": "s3:GetObject",
+        "Resource": "arn:aws:s3:::fcj-hall-of-fame/*"
+      }
+    ]
+  }
+  ```
+
+  > [!NOTE]
+  > Replace `arn:aws:s3:::fcj-hall-of-fame` with the ARN of your S3 bucket.
+
+  ![alt text](/images/workshop-3/s3-bucket--permisions--bucket-policy--grant-public-access.png)
+
+- Scroll to the bottom, click `Save changes`.
+
+---
+
+- Now you can access your frontend application via the bucket website endpoint.
+
+  ![alt text](/images/workshop-3/s3-bucket--static-website-hosting--frontend-app.png)
