@@ -1,5 +1,5 @@
 ---
-title: TODO - Workshop title
+title: Integrate API Gateway with frontend hosted in S3
 weight: 1
 chapter: false
 ---
