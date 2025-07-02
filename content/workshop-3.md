@@ -1,3 +1,8 @@
+---
+title: Workshop 3
+weight: 11
+---
+
 # Integrate API Gateway with frontend application hosted in S3
 
 In previous workshops, you have:
