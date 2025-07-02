@@ -1,8 +1,8 @@
 ---
-title: "TODO: Preparing Step 2 - title"
-weight: 2
+title: "Start the frontend application"
+weight: 3
 chapter: false
-pre: " <b> 2.2 </b> "
+pre: " <b> 2.3 </b> "
 ---
 
 ## TODO: Preparing Step 2 - heading

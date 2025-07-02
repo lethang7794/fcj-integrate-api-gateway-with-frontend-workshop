@@ -1,5 +1,5 @@
 ---
-title: "TODO: Preparing Step 1 - title"
+title: "Download source code and tools"
 weight: 1
 chapter: false
 pre: " <b> 2.1 </b> "

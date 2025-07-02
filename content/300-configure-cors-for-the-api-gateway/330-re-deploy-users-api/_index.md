@@ -1,5 +1,5 @@
 ---
-title: "TODO: Section 3.3 - title"
+title: "Re-deploy `UsersAPI`"
 weight: 2
 chapter: false
 pre: " <b> 3.3. </b> "
