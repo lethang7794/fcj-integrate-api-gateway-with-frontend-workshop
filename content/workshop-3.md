@@ -170,12 +170,7 @@ After enable CORS for `/users` and `/users/{userId}` resources, you need to re-d
 > [!NOTE]
 > Now you can be sure that the frontend works as expected, but it's still running on your local machine at <http://localhost:5173/>.
 
-## Host the frontend application with S3 static website hosting
-
-In this step, you will use S3 _static website hosting_ feature to
-
-- Deploy your frontend application
-- Expose it to people all over the world.
+## Store frontend application bundle in a S3 bucket
 
 ### Build your frontend application
 
@@ -219,17 +214,7 @@ In this step, you will use S3 _static website hosting_ feature to
 >
 > ![alt text](/images/workshop-3/frontend-app--serve-in-local-network.png)
 
-### Hosting the application bundle with S3 static website hosting
-
-> [!NOTE]
-> Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.
->
-> - Amazon S3 is built to store and retrieve any amount of data from anywhere.
-> - You can use Amazon S3 to host a static website. On a static website, individual webpages include static content. They might also contain client-side scripts.
->
-> See [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
-
-#### Create a S3 bucket
+### Create a S3 bucket
 
 - Open the [S3 service](https://ap-southeast-1.console.aws.amazon.com/s3/get-started?region=ap-southeast-1&bucketType=general) in AWS Management Console
 - Select `General purpose buckets` section in navigation pane.
@@ -258,7 +243,7 @@ In this step, you will use S3 _static website hosting_ feature to
 
   ![alt text](/images/workshop-3/s3--create-bucket--bucket-detail.jpg)
 
-#### Upload frontend application bundle to S3
+### Upload frontend application bundle to S3
 
 - Open the detail page of your S3 bucket `fcj-hall-of-fame`.
 
@@ -321,7 +306,7 @@ In this step, you will use S3 _static website hosting_ feature to
 
   ![alt text](/images/workshop-3/s3--upload-objects--upload--status.jpg)
 
-#### Interact with objects in S3 bucket
+### Interact with objects in S3 bucket
 
 - After upload the application bundle to `fcj-hall-of-fame` bucket, go back to the detail of the bucket, you will see the list of objects.
 
@@ -378,7 +363,22 @@ In this step, you will use S3 _static website hosting_ feature to
 >
 > For more information, see [Sharing objects with pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
 
-#### Turn on S3 static website hosting
+## Host the frontend application with S3 static website hosting
+
+In this step, you will use S3 _static website hosting_ feature to
+
+- Deploy your frontend application
+- Expose it to people all over the world.
+
+> [!NOTE]
+> Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.
+>
+> - Amazon S3 is built to store and retrieve any amount of data from anywhere.
+> - You can use Amazon S3 to host a static website. On a static website, individual webpages include static content. They might also contain client-side scripts.
+>
+> See [Hosting a static website using Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
+
+### Turn on S3 static website hosting
 
 In the detail page of your S3 bucket,
 
@@ -421,9 +421,9 @@ In the detail page of your S3 bucket,
 >
 > In the next step, you will make your bucket publicly readable, so your website can be publicly access.
 
-#### Settings permission for website access
+### Settings permission for website access
 
-##### Turn off S3 Block Public Access
+#### Turn off S3 Block Public Access
 
 - In the detail page of your S3 bucket, open `Permissions` tab.
 - Under `Block public access (bucket settings)` section, click `Edit`.
@@ -444,7 +444,7 @@ In the detail page of your S3 bucket,
 
     ![alt text](/images/workshop-3/s3-bucket--permisions--block-public-access--confirm.png)
 
-##### Add a bucket policy to grant public read access to your bucket
+#### Add a bucket policy to grant public read access to your bucket
 
 - In the detail page of your S3 bucket, open `Permissions` tab.
 - Under `Bucket policy` section, click `Edit`.
