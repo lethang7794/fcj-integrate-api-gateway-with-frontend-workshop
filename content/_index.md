@@ -6,16 +6,15 @@ chapter: false
 
 # Integrate API Gateway with frontend hosted in S3
 
-In previous workshops, you have:
-
-- Created Lambda functions and invoked them directly via function URLs.
-- Created an REST API using API Gateway that backed by these Lambda functions; then invoke your REST API with `curl` (a web client that supports HTTPS).
+In previous workshop, you use API Gateway to create an REST API that backed by Lambda functions.
 
 In this workshop, you will:
 
-- Integrate a frontend application (written in React) with your REST API.
+- Integrate a frontend application with your REST API, which means:
 
-  - Configure the application
-  - Configure CORS for the API Gateway to allow communication from the frontend application.
+  - Configuring the frontend application to connect to your REST API.
+  - Configuring CORS for the API Gateway to allow communication from the frontend application.
 
 - Deploy your frontend application using S3 _static website hosting_ feature.
+
+<!-- TODO: add diagram -->
