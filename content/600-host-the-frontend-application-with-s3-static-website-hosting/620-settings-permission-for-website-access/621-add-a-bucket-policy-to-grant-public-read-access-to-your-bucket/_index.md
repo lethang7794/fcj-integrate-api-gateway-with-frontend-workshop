@@ -1,14 +1,14 @@
 ---
 title: "Add a bucket policy to grant public read access to your bucket"
-weight: 2
+weight: 1
 chapter: false
-pre: " <b> 6.2.2 </b> "
+pre: " <b> 6.2.1 </b> "
 ---
 
 - In the detail page of your S3 bucket, open `Permissions` tab.
 - Under `Bucket policy` section, click `Edit`.
 
-  ![alt text](/images/workshop-3/s3-bucket--permisions--bucket-policy.png)
+  ![alt text](/images/workshop-3/s3-bucket--permisions--block-public-access.png)
 
 - In the `Edit bucket policy` page, fill in the `Policy`:
 
@@ -33,9 +33,3 @@ pre: " <b> 6.2.2 </b> "
   ![alt text](/images/workshop-3/s3-bucket--permisions--bucket-policy--grant-public-access.png)
 
 - Scroll to the bottom, click `Save changes`.
-
----
-
-- Now you can access your frontend application via the bucket website endpoint.
-
-  ![alt text](/images/workshop-3/s3-bucket--static-website-hosting--frontend-app.png)

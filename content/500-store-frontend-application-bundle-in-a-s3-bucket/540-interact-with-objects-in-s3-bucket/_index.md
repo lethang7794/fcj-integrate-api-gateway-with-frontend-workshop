@@ -18,10 +18,7 @@ pre: " <b> 5.4 </b> "
   ![alt text](/images/workshop-3/s3-bucket--index-object--access-denied.png)
 
   > [!NOTE]
-  > You can use the Object URL to access an object if:
-  >
-  > - The object allow _public access_ (it is shared with anyone in the Internet).
-  > - The bucket doesn't have `Block Public access` feature turned on.
+  > You can use the Object URL to access an object if: 1. The object allow _public access_ (it is shared with anyone in the Internet). 2. The bucket doesn't have `Block Public access` feature turned on.
 
   > [!NOTE]
   > By default, new buckets, and objects don't allow public access,
@@ -53,9 +50,4 @@ pre: " <b> 5.4 </b> "
       ```
 
 > [!NOTE]
-> When you click the Open button,
->
-> - S3 generates a pre-signed URL for the object.
-> - You open the object via that pre-signed URL.
->
-> For more information, see [Sharing objects with pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
+> When you click the Open button: 1. S3 generates a pre-signed URL for the object. 2. You open the object via that pre-signed URL. For more information, see [Sharing objects with pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)

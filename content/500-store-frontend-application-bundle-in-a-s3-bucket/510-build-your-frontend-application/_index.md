@@ -5,6 +5,8 @@ chapter: false
 pre: " <b> 5.3 </b> "
 ---
 
+## Build frontend application
+
 - First, we need to build the frontend application for production by running:
 
   ```shell
@@ -36,11 +38,12 @@ pre: " <b> 5.3 </b> "
   3 directories, 69 files
   ```
 
-> [!TIP]
-> You can use a file server to serve the application bundle (the `dist` directory) yourself.
->
-> For example, you can use [`vercel/serve`](https://github.com/vercel/serve) by running `pnpx server dist`.
->
-> Now, anyone in your local network (same Wifi, LAN) can access your application.
->
-> ![alt text](/images/workshop-3/frontend-app--serve-in-local-network.png)
+## Serve frontend application on your local network
+
+You can use a file server to serve the application bundle (the `dist` directory) yourself.
+
+For example, you can use [`vercel/serve`](https://github.com/vercel/serve) by running `pnpx server dist`.
+
+Now, anyone in your local network (same Wifi, LAN) can access your application.
+
+{{<figure src="/images/workshop-3/frontend-app--serve-in-local-network.png" title="" width=300pc >}}

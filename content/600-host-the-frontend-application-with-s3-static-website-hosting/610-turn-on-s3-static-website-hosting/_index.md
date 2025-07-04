@@ -39,9 +39,11 @@ In the detail page of your S3 bucket,
   - It's a different error.
   - Now instead of receiving an `AccessDenied` response in XML, you receive an `403 Forbidden` response in HTML.
 
-> [!NOTE]
+---
+
+> [!TIP]
 > Although you've turned on `Static website hosting` and had a `Bucket website endpoint`, you still can't publicly access the content of your website.
->
 > If you want your website to be public, you must make all your content publicly readable for your customers to be able to access it at the website endpoint.
->
+
+> [!NOTE]
 > In the next step, you will make your bucket publicly readable, so your website can be publicly access.
