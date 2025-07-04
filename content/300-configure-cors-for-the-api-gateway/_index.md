@@ -13,3 +13,6 @@ pre: " <b> 3. </b> "
 - You will be redirected to the _Resources_ section of the `UsersAPI`.
 
   ![alt text](/images/workshop-3/API-Gateway--UsersAPI--resources.png)
+
+> [!NOTE]
+> With API Gateway, the CORS settings is applied at resource-level, so we need to configure CORS settings for two 2 resources (`/users` and `users/{usersId}`)

@@ -29,6 +29,13 @@ pre: " <b> 2.4 </b> "
 
   ![alt text](/images/workshop-3/frontend-app--inspect.png)
 
-- Click of the `Console` tab, you should see some red text about `Access to fetch at 'https://XXXXXXXXXX.execute-api.REGION.amazonaws.com/STAGE/users' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.`
+- Click of the `Console` tab, you should see some errors:
+
+  ```
+  Access to fetch at 'https://XXXXXXXXXX.execute-api.REGION.amazonaws.com/STAGE/users' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+  ```
 
   ![alt text](/images/workshop-3/frontend-app--cors-error.png)
+
+> [!CAUTION]
+> Our frontend application has called the API Gateway, but the request is blocked by the browser because of the CORS settings of the API Gateway.
