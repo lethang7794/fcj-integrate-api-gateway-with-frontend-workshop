@@ -5,63 +5,67 @@ chapter: false
 pre: " <b> 5.3 </b> "
 ---
 
-- Open the detail page of your S3 bucket `fcj-hall-of-fame`.
+## Open the Upload page
 
-- In the `Object` tab - which is opened by default - click `Upload`.
+1. Open the detail page of your S3 bucket `fcj-hall-of-fame`.
 
-  ![alt text](/images/workshop-3/s3--upload-objects.jpg)
+2. In the `Object` tab - which is opened by default - click `Upload`.
 
-- First, you need to add the files and folders you want to upload:
+![alt text](/images/workshop-3/s3--upload-objects.jpg)
 
-  - To add the `assets` folder:
+## Select the files and folder to upload
 
-    - Click `Add folder`
+### To add the `assets` folder
 
-      ![alt text](/images/workshop-3/s3--upload-objects--add-folder.jpg)
+- Click `Add folder`
 
-    - Select the `assets` folder in the `dist` folder (of your frontend application)
-    - Click `Upload`.
+![alt text](/images/workshop-3/s3--upload-objects--add-folder.jpg)
 
-      ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-assets.png)
+- Select the `assets` folder in the `dist` folder (of your frontend application)
+- Click `Upload`.
 
-    - Click `Upload` again to confirm upload all files from `assets`.
+![alt text](/images/workshop-3/s3--upload-objects--upload-folder-assets.png)
 
-  - To add the `images` folder:
+- Click `Upload` again to confirm upload all files from `assets`.
 
-    - Click `Add folder`
+### To add the `images` folder
 
-      ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images.png)
+- Click `Add folder`
 
-    - Select the `images` folder in the `dist` folder (of your frontend application)
-    - Click `Upload`.
+![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images.png)
 
-      ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images-select.png)
+- Select the `images` folder in the `dist` folder (of your frontend application)
+- Click `Upload`.
 
-    - Click `Upload` again to confirm upload all files from `images`.
+![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images-select.png)
 
-      ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images-confirm.png)
+- Click `Upload` again to confirm upload all files from `images`.
 
-  - To add the `index.html` file:
+![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images-confirm.png)
 
-    - Click `Add files`
+### To add the `index.html` file
 
-      ![alt text](/images/workshop-3/s3--upload-objects--upload-file-index.png)
+- Click `Add files`
 
-    - Select the `index.html` file in the `dist` folder (of your frontend application)
-    - Click `Open`.
+![alt text](/images/workshop-3/s3--upload-objects--upload-file-index.png)
 
-      ![alt text](/images/workshop-3/s3--upload-objects--upload-file-index-confirm.png)
+- Select the `index.html` file in the `dist` folder (of your frontend application)
+- Click `Open`.
+
+![alt text](/images/workshop-3/s3--upload-objects--upload-file-index-confirm.png)
+
+## Upload the files and folder
 
 - After add these files and folder, scroll to bottom, click `Upload`
 
-  ![alt text](/images/workshop-3/s3--upload-objects--upload--confirm.png)
+![alt text](/images/workshop-3/s3--upload-objects--upload--confirm.png)
 
 - Wait for the files and folders to be uploaded to your S3 bucket.
 
-  ![alt text](/images/workshop-3/s3--upload-objects--upload--progress.jpg)
+![alt text](/images/workshop-3/s3--upload-objects--upload--progress.jpg)
 
 - When the upload is finished, you will see an `Upload succeeded` notification.
 
 - In the `Summary` section, click on the URI of the S3 bucket (`s3://fcj-hall-of-fame`) to go back to the detail page of the bucket.
 
-  ![alt text](/images/workshop-3/s3--upload-objects--upload--status.jpg)
+![alt text](/images/workshop-3/s3--upload-objects--upload--status.jpg)

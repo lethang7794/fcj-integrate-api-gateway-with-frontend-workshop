@@ -5,24 +5,24 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-- Select the `/users` resource.
-- Click `Enable CORS`.
+1. Select the `/users` resource.
+2. Click `Enable CORS`.
 
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS.png)
+![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS.png)
 
-- In the `Enable CORS` page - `CORS Settings` section:
+3. In the `Enable CORS` page - `CORS Settings` section:
 
-  - For `Access-Control-Allow-Methods`, select `GET` and `POST`.
-  - Click `Save`.
+   - For `Access-Control-Allow-Methods`, select `GET` and `POST`.
+   - Click `Save`.
 
-    ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--CORS-settings.png)
+![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--CORS-settings.png)
 
-- Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
+4. Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
 
-  - Created `OPTIONS` method ...
-  - Added `Access-Control-Allow-Origin` to the `GET`/`POST` method:
+   - Created `OPTIONS` method ...
+   - Added `Access-Control-Allow-Origin` to the `GET`/`POST` method:
 
-    - Method Response Header
-    - Integration Response Header Mapping
+     - Method Response Header
+     - Integration Response Header Mapping
 
-    ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS-detail.png)
+![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS-detail.png)

@@ -7,36 +7,36 @@ pre: " <b> 5.3 </b> "
 
 ## Build frontend application
 
-- First, we need to build the frontend application for production by running:
+1. First, we need to build the frontend application for production by running:
 
-  ```shell
-  pnpm run build
-  ```
+   ```shell
+   pnpm run build
+   ```
 
-- This will run `vite build` that produces an application bundle that is suitable to be served over a static hosting service.
+2. This will run `vite build` that produces an application bundle that is suitable to be served over a static hosting service.
 
-- Check the application bundle at `dist`
+3. Check the application bundle at `dist`
 
-  ```shell
-  $ tree dist
-  dist
-  ├── assets
-  │   ├── 401-BBhoy51U.js
-  │   ├── 403-pH7gA2BX.js
-  │   ├── 404-CUltoGn3.js
-  │   ├── 500-BEjnOsrW.js
-  │   ├── 503-Dw-MojSM.js
-  │   └── ...
-  ├── images
-  │   ├── favicon_light.png
-  │   ├── favicon_light.svg
-  │   ├── favicon.png
-  │   ├── favicon.svg
-  │   └── shadcn-admin.png
-  └── index.html
+   ```shell
+   $ tree dist
+   dist
+   ├── assets
+   │   ├── 401-BBhoy51U.js
+   │   ├── 403-pH7gA2BX.js
+   │   ├── 404-CUltoGn3.js
+   │   ├── 500-BEjnOsrW.js
+   │   ├── 503-Dw-MojSM.js
+   │   └── ...
+   ├── images
+   │   ├── favicon_light.png
+   │   ├── favicon_light.svg
+   │   ├── favicon.png
+   │   ├── favicon.svg
+   │   └── shadcn-admin.png
+   └── index.html
 
-  3 directories, 69 files
-  ```
+   3 directories, 69 files
+   ```
 
 ## Serve frontend application on your local network
 

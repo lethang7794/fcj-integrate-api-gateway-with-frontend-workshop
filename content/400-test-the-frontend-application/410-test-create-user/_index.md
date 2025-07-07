@@ -5,30 +5,30 @@ chapter: false
 pre: " <b> 4.1 </b> "
 ---
 
-- Create a user with name of `Bill Gates` and email of `bill@gates.com`.
+Create a user with name of `Bill Gates` and email of `bill@gates.com`.
 
-  - Click `Add user`.
+1. Click `Add user`.
 
-    ![alt text](/images/workshop-3/frontend-app--test-create-user.png)
+![alt text](/images/workshop-3/frontend-app--test-create-user.png)
 
-  - Enter:
+2. Enter:
 
-    - `Name`: `Bill Gates`
-    - `Email`: `bill@gates.com`
+- `Name`: `Bill Gates`
+- `Email`: `bill@gates.com`
 
-  - Click `Create`
+3. Click `Create`
 
-    ![alt text](/images/workshop-3/frontend-app--test-create-user--confirm.png)
+![alt text](/images/workshop-3/frontend-app--test-create-user--confirm.png)
 
-  - You should see the new user in the list.
+4. You should see the new user in the list.
 
-    ![alt text](/images/workshop-3/frontend-app--test-create-user--user-created.png)
+![alt text](/images/workshop-3/frontend-app--test-create-user--user-created.png)
 
-- Repeat this step to create 2 other users:
+5. Repeat this step to create 2 other users:
 
-  - A user with name of `Steve Jobs` and email of `steve@jobs.com`.
-  - A user with name of `Jeff Bezos` and email of `jeff@bezos.com`.
+   - A user with name of `Steve Jobs` and email of `steve@jobs.com`.
+   - A user with name of `Jeff Bezos` and email of `jeff@bezos.com`.
 
-- You should see 3 users in the list.
+6. You should see 3 users in the list.
 
-  ![alt text](/images/workshop-3/frontend-app--test-create-user--three-users-created.png)
+![alt text](/images/workshop-3/frontend-app--test-create-user--three-users-created.png)

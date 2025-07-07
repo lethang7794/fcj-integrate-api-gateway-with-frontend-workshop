@@ -1,9 +1,13 @@
-+++
-title = "Cleanup"
-weight = 7
-chapter = false
-pre = "<b>7. </b>"
-+++
+---
+title: "Cleanup"
+weight: 7
+chapter: false
+pre: "<b>7. </b>"
+---
+
+{{% toc %}}
+
+---
 
 In additional to the resources in:
 
@@ -16,6 +20,8 @@ For this workshop, you need to clean up the following resources:
 
 ---
 
+## Empty the bucket
+
 1. Open [_General purpose buckets_ section](https://console.aws.amazon.com/s3/buckets) of the S3 console.
 2. In the list of the bucket:
 
@@ -26,25 +32,27 @@ For this workshop, you need to clean up the following resources:
 
 3. In the `Empty bucket` page:
 
-   - Type in `permanently delete`.
-   - Click `Empty`.
+- Type in `permanently delete`.
+- Click `Empty`.
 
-     ![alt text](/images/workshop-3/clean-up--empty-bucket.png)
+![alt text](/images/workshop-3/clean-up--empty-bucket.png)
 
-   - Wait still you receive a "Successfully emptied bucket" message.
+4. Wait still you receive a "Successfully emptied bucket" message.
 
-     ![alt text](/images/workshop-3/clean-up--empty-bucket-succeed.png)
+![alt text](/images/workshop-3/clean-up--empty-bucket-succeed.png)
 
-   - Click `Exit` to return to the list of S3 buckets.
+- Click `Exit` to return to the list of S3 buckets.
 
-4. In the list of the bucket:
+## Delete the bucket
 
-   - Select `fcj-hall-of-fame` bucket.
-   - Click `Delete`.
+In the list of the bucket:
 
-     ![alt text](/images/workshop-3/clean-up--delete-bucket.png)
+- Select `fcj-hall-of-fame` bucket.
+- Click `Delete`.
 
-   - Type in the bucket name `fcj-hall-of-fame`
-   - Click `Delete bucket`.
+  ![alt text](/images/workshop-3/clean-up--delete-bucket.png)
 
-     ![alt text](/images/workshop-3/clean-up--delete-bucket-confirm.png)
+- Type in the bucket name `fcj-hall-of-fame`
+- Click `Delete bucket`.
+
+  ![alt text](/images/workshop-3/clean-up--delete-bucket-confirm.png)

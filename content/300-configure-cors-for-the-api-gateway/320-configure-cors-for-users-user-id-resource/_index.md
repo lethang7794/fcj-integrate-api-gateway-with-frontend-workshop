@@ -5,23 +5,23 @@ chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-- Go to the `Resources` section of the `UsersAPI`.
-- Select the `/users/{userId}` resource.
-- Click `Enable CORS`.
+1. Go to the `Resources` section of the `UsersAPI`.
+2. Select the `/users/{userId}` resource.
+3. Click `Enable CORS`.
 
-  ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users-userId--enable-CORS.png)
+![alt text](/images/workshop-3/API-Gateway--UsersAPI--users-userId--enable-CORS.png)
 
-- In the `Enable CORS` page - `CORS Settings` section:
+4. In the `Enable CORS` page - `CORS Settings` section:
 
-  - For `Access-Control-Allow-Methods`, select `GET`, `DELETE`, `POST`.
-  - Click `Save`.
+   - For `Access-Control-Allow-Methods`, select `GET`, `DELETE`, `POST`.
+   - Click `Save`.
 
-    ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users-userId--CORS-settings.png)
+![alt text](/images/workshop-3/API-Gateway--UsersAPI--users-userId--CORS-settings.png)
 
-- Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
+5. Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
 
-  - Created `OPTIONS` method ...
-  - Added `Access-Control-Allow-Origin` to the `GET`/`DELETE`/`POST` method:
+   - Created `OPTIONS` method ...
+   - Added `Access-Control-Allow-Origin` to the `GET`/`DELETE`/`POST` method:
 
-    - Method Response Header
-    - Integration Response Header Mapping
+     - Method Response Header
+     - Integration Response Header Mapping
