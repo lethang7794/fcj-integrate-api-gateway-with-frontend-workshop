@@ -19,6 +19,6 @@ In this workshop, you will:
 
 The final architecture looks like this
 
-![alt text](/images/diagrams/workshop-3--api-gateway--rest-api--event.drawio.svg)
+![alt text](/images/diagrams/workshop-3--api-gateway--rest-api--event.drawio.png)
 
 <!-- TODO: add diagram -->
