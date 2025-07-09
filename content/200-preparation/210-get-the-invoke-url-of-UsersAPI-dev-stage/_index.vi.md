@@ -16,7 +16,7 @@ pre: " <b> 2.1 </b> "
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--resources.jpg)
 
 4. Chọn phần `Stages` của `UsersAPI`.
-5. Chọn giai đoạn `dev`.
-6. Trong phần `Stage details` - `Invoke URL`, nhấp vào biểu tượng sao chép để sao chép _Invoke URL_ của giai đoạn `dev` trong `UsersAPI`.
+5. Chọn môi trường (stage) `dev`.
+6. Trong phần `Stage details` - `Invoke URL`, nhấp vào biểu tượng sao chép để sao chép _Invoke URL_ của môi trường (stage) `dev` trong `UsersAPI`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--stages.jpg)

@@ -25,7 +25,9 @@
       >{{ .Site.Lastmod | time.Format "02-01-2006" }}</font
     ></i
   >
+  {{ if .GitInfo }}
   <div style="display: none">{{ .GitInfo.AbbreviatedHash }}</div>
+  {{ end }}
 </left>
 <left>
   <br />

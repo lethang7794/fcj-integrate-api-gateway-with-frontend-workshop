@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 5.4 </b> "
 ---
 
-1. Sau khi tải lên gói ứng dụng lên bucket `fcj-hall-of-fame`, quay lại trang chi tiết của bucket, bạn sẽ thấy danh sách các đối tượng.
+1. Sau khi tải lên gói ứng dụng S3 bucket của bạn (ví dụ `fcj-hall-of-fame`), quay lại trang chi tiết của bucket, bạn sẽ thấy danh sách các đối tượng (S3 object).
 
 ![alt text](/images/workshop-3/s3-bucket--list-objects.png)
 
@@ -13,7 +13,7 @@ pre: " <b> 5.4 </b> "
 
 ![alt text](/images/workshop-3/s3-bucket--index-object.png)
 
-3. Nếu bạn nhấp vào `Object URL`, bạn sẽ nhận được phản hồi `Access Denied` dưới dạng XML.
+3. Nếu bạn nhấp vào `Object URL`, bạn sẽ nhận được phản hồi `Access Denied` (Truy cập bị từ chối) dưới dạng XML.
 
 ![alt text](/images/workshop-3/s3-bucket--index-object--access-denied.png)
 

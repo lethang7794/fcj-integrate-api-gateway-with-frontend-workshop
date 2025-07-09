@@ -1,5 +1,5 @@
 ---
-title: "Tải lên gói ứng dụng frontend lên S3 bucket"
+title: "Tải gói ứng dụng frontend lên S3 bucket"
 weight: 1
 chapter: false
 pre: " <b> 5.3 </b> "
@@ -9,7 +9,7 @@ pre: " <b> 5.3 </b> "
 
 1. Mở trang chi tiết S3 bucket `fcj-hall-of-fame` của bạn.
 
-2. Trong tab `Object` (mở mặc định), nhấp vào `Upload`.
+2. Trong tab `Object` (mở mặc định), nhấp vào `Upload` (Tải lên).
 
 ![alt text](/images/workshop-3/s3--upload-objects.jpg)
 
@@ -64,8 +64,8 @@ pre: " <b> 5.3 </b> "
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload--progress.jpg)
 
-- Khi quá trình tải lên hoàn tất, bạn sẽ thấy thông báo `Upload succeeded`.
+- Khi quá trình tải lên hoàn tất, bạn sẽ thấy thông báo `Upload succeeded` (Tải lên thành công).
 
-- Trong phần `Summary`, nhấp vào URI của S3 bucket (`s3://fcj-hall-of-fame`) để quay lại trang chi tiết của bucket.
+- Trong phần `Summary` (Tóm tắt), nhấp vào URI của S3 bucket (`s3://fcj-hall-of-fame`) để quay lại trang chi tiết của bucket.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload--status.jpg)

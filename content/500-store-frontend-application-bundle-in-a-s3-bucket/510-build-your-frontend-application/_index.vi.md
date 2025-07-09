@@ -7,13 +7,13 @@ pre: " <b> 5.3 </b> "
 
 ## Xây dựng ứng dụng frontend
 
-1. Đầu tiên, chúng ta cần xây dựng ứng dụng frontend cho môi trường production bằng cách chạy:
+1. Đầu tiên, chúng ta cần xây dựng (build) ứng dụng frontend cho môi trường production bằng cách chạy:
 
    ```shell
    pnpm run build
    ```
 
-2. Lệnh này sẽ chạy `vite build` để tạo ra một gói ứng dụng phù hợp để phục vụ thông qua dịch vụ lưu trữ tĩnh.
+2. Lệnh này sẽ chạy `vite build` để tạo ra một gói ứng dụng (application bundle) phù hợp để phục vụ thông qua dịch vụ lưu trữ tĩnh.
 
 3. Kiểm tra gói ứng dụng tại thư mục `dist`
 
