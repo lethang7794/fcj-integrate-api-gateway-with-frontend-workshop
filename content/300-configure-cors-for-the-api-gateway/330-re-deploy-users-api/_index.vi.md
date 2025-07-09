@@ -1,18 +1,18 @@
 ---
-title: "Re-deploy `UsersAPI`"
+title: "Triển khai lại `UsersAPI`"
 weight: 2
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-After enable CORS for `/users` and `/users/{userId}` resources, you need to re-deploy the API so the new settings is applied in your `dev` stage.
+Sau khi bật CORS cho các tài nguyên `/users` và `/users/{userId}`, bạn cần triển khai lại API để các cài đặt mới được áp dụng trong giai đoạn `dev` của bạn.
 
-1. Go to the `Resources` section of the `UsersAPI`.
-2. Click `Deploy API`.
+1. Đi đến phần `Resources` của `UsersAPI`.
+2. Nhấp vào `Deploy API`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--redeploy-button.png)
 
-3. Choose the `dev` stage (that you've created).
-4. Click `Deploy`.
+3. Chọn giai đoạn `dev` (mà bạn đã tạo).
+4. Nhấp vào `Deploy`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--redeploy-stage.png)

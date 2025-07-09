@@ -1,5 +1,5 @@
 ---
-title: "Cleanup"
+title: "Dọn dẹp tài nguyên"
 weight: 7
 chapter: false
 pre: "<b>7. </b>"
@@ -9,50 +9,50 @@ pre: "<b>7. </b>"
 
 ---
 
-In additional to the resources in:
+Ngoài các tài nguyên trong:
 
-- Workshop 1: DynamoDB, Lambda functions, IAM Roles.
+- Workshop 1: DynamoDB, hàm Lambda, Vai trò IAM.
 - Workshop 2: API Gateway.
 
-For this workshop, you need to clean up the following resources:
+Đối với workshop này, bạn cần dọn dẹp các tài nguyên sau:
 
-- The S3 bucket.
+- S3 bucket.
 
 ---
 
-## Empty the bucket
+## Làm trống bucket
 
-1. Open [_General purpose buckets_ section](https://console.aws.amazon.com/s3/buckets) of the S3 console.
-2. In the list of the bucket:
+1. Mở phần [_General purpose buckets_](https://console.aws.amazon.com/s3/buckets) trong bảng điều khiển S3.
+2. Trong danh sách bucket:
 
-   - Select `fcj-hall-of-fame` bucket.
-   - Click `Empty`.
+   - Chọn bucket `fcj-hall-of-fame`.
+   - Nhấp vào `Empty` (Làm trống).
 
    ![alt text](/images/workshop-3/clean-up--list-buckets.png)
 
-3. In the `Empty bucket` page:
+3. Trang `Empty bucket` (Làm trống bucket):
 
-- Type in `permanently delete`.
-- Click `Empty`.
+- Nhập `permanently delete` (xóa vĩnh viễn).
+- Nhấp vào `Empty` (Làm trống).
 
 ![alt text](/images/workshop-3/clean-up--empty-bucket.png)
 
-4. Wait still you receive a "Successfully emptied bucket" message.
+4. Chờ cho đến khi bạn nhận được thông báo "Successfully emptied bucket" (Đã làm trống bucket thành công).
 
 ![alt text](/images/workshop-3/clean-up--empty-bucket-succeed.png)
 
-- Click `Exit` to return to the list of S3 buckets.
+- Nhấp vào `Exit` (Thoát) để quay lại danh sách bucket S3.
 
-## Delete the bucket
+## Xóa bucket
 
-In the list of the bucket:
+Trong danh sách bucket:
 
-- Select `fcj-hall-of-fame` bucket.
-- Click `Delete`.
+- Chọn bucket `fcj-hall-of-fame`.
+- Nhấp vào `Delete` (Xóa).
 
   ![alt text](/images/workshop-3/clean-up--delete-bucket.png)
 
-- Type in the bucket name `fcj-hall-of-fame`
-- Click `Delete bucket`.
+- Nhập tên bucket `fcj-hall-of-fame`
+- Nhấp vào `Delete bucket` (Xóa bucket).
 
   ![alt text](/images/workshop-3/clean-up--delete-bucket-confirm.png)

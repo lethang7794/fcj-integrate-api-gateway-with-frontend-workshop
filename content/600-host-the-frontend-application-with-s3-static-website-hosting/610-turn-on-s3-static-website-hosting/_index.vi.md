@@ -1,49 +1,49 @@
 ---
-title: "Turn on S3 static website hosting"
+title: "Bật tính năng lưu trữ trang web tĩnh S3"
 weight: 1
 chapter: false
 pre: " <b> 6.1 </b> "
 ---
 
-In the detail page of your S3 bucket,
+Trong trang chi tiết của S3 bucket của bạn:
 
-1. Open `Properties` tab.
+1. Mở tab `Properties` (Thuộc tính).
 
 ![alt text](/images/workshop-3/s3-bucket--properties.jpg)
 
-2. In the `Static website hosting` section, click `Edit`.
+2. Trong phần `Static website hosting`, nhấp vào `Edit` (Chỉnh sửa).
 
 ![alt text](/images/workshop-3/s3-bucket--properties--static-website-hosting--edit.jpg)
 
-3. By default `Static website hosting` is `Disable`.
+3. Theo mặc định, `Static website hosting` đang ở trạng thái `Disable` (Tắt).
 
 ![alt text](/images/workshop-3/s3-bucket--properties--static-website-hosting--disable.jpg)
 
-4. For `Static website hosting`, select `Enable`
-5. For `Hosting type`, select `Host a static website`.
-6. For `Index document`, enter `index.html`
+4. Đối với `Static website hosting`, chọn `Enable` (Bật).
+5. Đối với `Hosting type`, chọn `Host a static website` (Lưu trữ trang web tĩnh).
+6. Đối với `Index document`, nhập `index.html`.
 
 ![alt text](/images/workshop-3/s3-bucket--properties--static-website-hosting--index-document.jpg)
 
-7. Scroll to bottom, click `Save changes`.
+7. Cuộn xuống dưới cùng và nhấp vào `Save changes` (Lưu thay đổi).
 
-8. You will be redirected back to the detail page of S3 bucket.
-9. Scroll to `Static website hosting` section, click the `Copy` button to copy the `Bucket website endpoint`.
+8. Bạn sẽ được chuyển hướng trở lại trang chi tiết của S3 bucket.
+9. Cuộn đến phần `Static website hosting`, nhấp vào nút `Copy` để sao chép `Bucket website endpoint` (Điểm cuối trang web của bucket).
 
 ![alt text](/images/workshop-3/s3-bucket--properties--static-website-hosting--bucket-website-endpoint.jpg)
 
-10. Now let's open your website using the bucket website endpoint.
+10. Bây giờ hãy mở trang web của bạn bằng cách sử dụng điểm cuối trang web của bucket.
 
 ![alt text](/images/workshop-3/s3-bucket--properties--static-website-hosting--403.png)
 
-- It's a different error.
-- Now instead of receiving an `AccessDenied` response in XML, you receive an `403 Forbidden` response in HTML.
+- Đây là một lỗi khác.
+- Thay vì nhận được phản hồi `AccessDenied` dạng XML, bây giờ bạn nhận được phản hồi `403 Forbidden` dạng HTML.
 
 ---
 
 > [!TIP]
-> Although you've turned on `Static website hosting` and had a `Bucket website endpoint`, you still can't publicly access the content of your website.
-> If you want your website to be public, you must make all your content publicly readable for your customers to be able to access it at the website endpoint.
+> Mặc dù bạn đã bật `Static website hosting` và có `Bucket website endpoint`, bạn vẫn chưa thể truy cập công khai nội dung trang web của mình.
+> Nếu bạn muốn trang web của mình công khai, bạn phải đặt tất cả nội dung của mình ở chế độ đọc công khai để khách hàng có thể truy cập tại điểm cuối trang web.
 
 > [!NOTE]
-> In the next step, you will make your bucket publicly readable, so your website can be publicly access.
+> Trong bước tiếp theo, bạn sẽ đặt quyền đọc công khai cho bucket của mình để trang web có thể được truy cập công khai.

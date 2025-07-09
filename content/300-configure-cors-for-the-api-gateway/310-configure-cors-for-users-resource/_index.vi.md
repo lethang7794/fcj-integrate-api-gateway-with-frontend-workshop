@@ -1,26 +1,26 @@
 ---
-title: "Configure CORS for /users resource"
+title: "Cấu hình CORS cho tài nguyên /users"
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
-1. Select the `/users` resource.
-2. Click `Enable CORS`.
+1. Chọn tài nguyên `/users`.
+2. Nhấp vào `Enable CORS`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--enable-CORS.png)
 
-3. In the `Enable CORS` page - `CORS Settings` section:
+3. Trong trang `Enable CORS` - phần `CORS Settings`:
 
-   - For `Access-Control-Allow-Methods`, select `GET` and `POST`.
-   - Click `Save`.
+   - Tại `Access-Control-Allow-Methods`, chọn `GET` và `POST`.
+   - Nhấp vào `Save`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--users--CORS-settings.png)
 
-4. Click `Details` in the `Successfully enabled CORS` notification, you will see that API Gateway has:
+4. Nhấp vào `Details` trong thông báo `Successfully enabled CORS`, bạn sẽ thấy API Gateway đã:
 
-   - Created `OPTIONS` method ...
-   - Added `Access-Control-Allow-Origin` to the `GET`/`POST` method:
+   - Tạo phương thức `OPTIONS` ...
+   - Thêm `Access-Control-Allow-Origin` vào phương thức `GET`/`POST`:
 
      - Method Response Header
      - Integration Response Header Mapping

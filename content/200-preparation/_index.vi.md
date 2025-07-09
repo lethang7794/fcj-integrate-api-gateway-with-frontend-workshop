@@ -1,14 +1,14 @@
 ---
-title: "Preparation"
+title: "Chuẩn bị"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
 > [!IMPORTANT]
-> You need to complete workshop 1 and workshop 2 of this series before continue with this workshop.
+> Bạn cần hoàn thành workshop 1 và workshop 2 của loạt bài này trước khi tiếp tục với workshop này.
 
-In this step you will
+Trong bước này, bạn sẽ:
 
-- Configure your frontend application with the endpoint for the UsersAPI.
-- Verify that's your frontend application can interact with UsersAPI.
+- Cấu hình ứng dụng frontend với endpoint cho UsersAPI.
+- Xác minh rằng ứng dụng frontend của bạn có thể tương tác với UsersAPI.

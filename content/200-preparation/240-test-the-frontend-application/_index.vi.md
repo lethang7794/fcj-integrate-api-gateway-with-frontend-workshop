@@ -1,19 +1,19 @@
 ---
-title: "Test the frontend application"
+title: "Kiểm tra ứng dụng frontend"
 weight: 4
 chapter: false
 pre: " <b> 2.4 </b> "
 ---
 
-1. Open the extracted source code in a Terminal.
+1. Mở thư mục mã nguồn đã giải nén trong Terminal.
 
-2. Install dependencies:
+2. Cài đặt các phụ thuộc:
 
    ```shell
    pnpm install
    ```
 
-3. Start the frontend applications
+3. Khởi động ứng dụng frontend:
 
    ```shell
    pnpm run dev
@@ -21,15 +21,15 @@ pre: " <b> 2.4 </b> "
 
 ![alt text](/images/workshop-3/frontend-app--dev.png)
 
-4. Open the frontend application at <http://localhost:5173/> with your browser. You should see the following UI.
+4. Mở ứng dụng frontend tại <http://localhost:5173/> bằng trình duyệt của bạn. Bạn sẽ thấy giao diện người dùng như sau:
 
 ![alt text](/images/workshop-3/frontend-app--ui.png)
 
-5. Open the Inspect feature of your browser
+5. Mở tính năng Kiểm tra (Inspect) của trình duyệt
 
 ![alt text](/images/workshop-3/frontend-app--inspect.png)
 
-6. Click of the `Console` tab, you should see some errors:
+6. Nhấp vào tab `Console`, bạn sẽ thấy một số lỗi:
 
    ```
    Access to fetch at 'https://XXXXXXXXXX.execute-api.REGION.amazonaws.com/STAGE/users' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
@@ -38,4 +38,4 @@ pre: " <b> 2.4 </b> "
 ![alt text](/images/workshop-3/frontend-app--cors-error.png)
 
 > [!CAUTION]
-> Our frontend application has called the API Gateway, but the request is blocked by the browser because of the CORS settings of the API Gateway.
+> Ứng dụng frontend của chúng ta đã gọi API Gateway, nhưng yêu cầu đã bị chặn bởi trình duyệt do cấu hình CORS của API Gateway.

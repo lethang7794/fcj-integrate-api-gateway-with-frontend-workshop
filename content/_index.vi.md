@@ -1,20 +1,20 @@
 ---
-title: Integrate API Gateway with frontend hosted in S3
+title: Tích hợp API Gateway với frontend được lưu trữ trên S3
 weight: 1
 chapter: false
 ---
 
-# Integrate API Gateway with frontend hosted in S3
+# Tích hợp API Gateway với frontend được lưu trữ trên S3
 
-In previous workshop, you use API Gateway to create an REST API that backed by Lambda functions.
+Trong workshop trước, bạn đã sử dụng API Gateway để tạo một REST API được hỗ trợ bởi các hàm Lambda.
 
-In this workshop, you will:
+Trong workshop này, bạn sẽ:
 
-- Integrate a frontend application with your REST API, which means:
+- Tích hợp ứng dụng frontend với REST API của bạn, bao gồm:
 
-  - Configuring the frontend application to connect to your REST API.
-  - Configuring CORS for the API Gateway to allow communication from the frontend application.
+  - Cấu hình ứng dụng frontend để kết nối với REST API của bạn.
+  - Cấu hình CORS cho API Gateway để cho phép giao tiếp từ ứng dụng frontend.
 
-- Deploy your frontend application using S3 _static website hosting_ feature.
+- Triển khai ứng dụng frontend của bạn bằng tính năng _lưu trữ trang web tĩnh_ của S3.
 
-<!-- TODO: add diagram -->
+<!-- TODO: thêm sơ đồ -->

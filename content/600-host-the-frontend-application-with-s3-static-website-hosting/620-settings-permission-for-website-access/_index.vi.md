@@ -1,10 +1,10 @@
 ---
-title: "Settings permission for website access"
+title: "Cài đặt quyền truy cập trang web"
 weight: 2
 chapter: false
 pre: " <b> 6.2 </b> "
 ---
 
-This section covers the configuration of permissions necessary for enabling public access to your static website hosted on Amazon S3.
+Phần này bao gồm việc cấu hình các quyền cần thiết để kích hoạt truy cập công khai cho trang web tĩnh của bạn được lưu trữ trên Amazon S3.
 
-You'll learn how to set up the bucket policies (with the appropriated permissions) and configuration to allow your website to be accessible to users worldwide.
+Bạn sẽ học cách thiết lập chính sách bucket (với các quyền phù hợp) và cấu hình để cho phép trang web của bạn có thể truy cập được từ người dùng trên toàn thế giới.

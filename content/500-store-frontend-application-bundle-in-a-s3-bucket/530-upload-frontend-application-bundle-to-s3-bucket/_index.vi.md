@@ -1,71 +1,71 @@
 ---
-title: "Upload frontend application bundle to S3 bucket"
+title: "Tải lên gói ứng dụng frontend lên S3 bucket"
 weight: 1
 chapter: false
 pre: " <b> 5.3 </b> "
 ---
 
-## Open the Upload page
+## Mở trang Tải lên
 
-1. Open the detail page of your S3 bucket `fcj-hall-of-fame`.
+1. Mở trang chi tiết S3 bucket `fcj-hall-of-fame` của bạn.
 
-2. In the `Object` tab - which is opened by default - click `Upload`.
+2. Trong tab `Object` (mở mặc định), nhấp vào `Upload`.
 
 ![alt text](/images/workshop-3/s3--upload-objects.jpg)
 
-## Select the files and folder to upload
+## Chọn tệp và thư mục để tải lên
 
-### To add the `assets` folder
+### Để thêm thư mục `assets`
 
-- Click `Add folder`
+- Nhấp vào `Add folder`
 
 ![alt text](/images/workshop-3/s3--upload-objects--add-folder.jpg)
 
-- Select the `assets` folder in the `dist` folder (of your frontend application)
-- Click `Upload`.
+- Chọn thư mục `assets` trong thư mục `dist` (của ứng dụng frontend của bạn)
+- Nhấp `Upload`.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-assets.png)
 
-- Click `Upload` again to confirm upload all files from `assets`.
+- Nhấp `Upload` một lần nữa để xác nhận tải lên tất cả các tệp từ `assets`.
 
-### To add the `images` folder
+### Để thêm thư mục `images`
 
-- Click `Add folder`
+- Nhấp vào `Add folder`
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images.png)
 
-- Select the `images` folder in the `dist` folder (of your frontend application)
-- Click `Upload`.
+- Chọn thư mục `images` trong thư mục `dist` (của ứng dụng frontend của bạn)
+- Nhấp `Upload`.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images-select.png)
 
-- Click `Upload` again to confirm upload all files from `images`.
+- Nhấp `Upload` một lần nữa để xác nhận tải lên tất cả các tệp từ `images`.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload-folder-images-confirm.png)
 
-### To add the `index.html` file
+### Để thêm tệp `index.html`
 
-- Click `Add files`
+- Nhấp vào `Add files`
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload-file-index.png)
 
-- Select the `index.html` file in the `dist` folder (of your frontend application)
-- Click `Open`.
+- Chọn tệp `index.html` trong thư mục `dist` (của ứng dụng frontend của bạn)
+- Nhấp `Open`.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload-file-index-confirm.png)
 
-## Upload the files and folder
+## Tải lên các tệp và thư mục
 
-- After add these files and folder, scroll to bottom, click `Upload`
+- Sau khi thêm các tệp và thư mục, cuộn xuống dưới cùng, nhấp vào `Upload`
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload--confirm.png)
 
-- Wait for the files and folders to be uploaded to your S3 bucket.
+- Chờ các tệp và thư mục được tải lên S3 bucket của bạn.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload--progress.jpg)
 
-- When the upload is finished, you will see an `Upload succeeded` notification.
+- Khi quá trình tải lên hoàn tất, bạn sẽ thấy thông báo `Upload succeeded`.
 
-- In the `Summary` section, click on the URI of the S3 bucket (`s3://fcj-hall-of-fame`) to go back to the detail page of the bucket.
+- Trong phần `Summary`, nhấp vào URI của S3 bucket (`s3://fcj-hall-of-fame`) để quay lại trang chi tiết của bucket.
 
 ![alt text](/images/workshop-3/s3--upload-objects--upload--status.jpg)

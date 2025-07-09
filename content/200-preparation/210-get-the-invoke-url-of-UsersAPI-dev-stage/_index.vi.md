@@ -1,22 +1,22 @@
 ---
-title: "Get the Invoke URL of our UsersAPI's dev stage"
+title: "Lấy Invoke URL của giai đoạn dev trong UsersAPI"
 weight: 1
 chapter: false
 pre: " <b> 2.1 </b> "
 ---
 
-The frontend app will integrate with your REST API (created with API Gateway) via the _Invoke URL_.
+Ứng dụng frontend sẽ tích hợp với REST API của bạn (được tạo bằng API Gateway) thông qua _Invoke URL_.
 
-## Get the Invoke URL of our UsersAPI's dev stage
+## Lấy Invoke URL của giai đoạn dev trong UsersAPI
 
-1. Open [APIs section](https://console.aws.amazon.com/apigateway/main/apis) of the API Gateway console.
-2. In the list of the APIs, click on the name of the API (`UsersAPI`).
-3. You will be redirected to the _Resources_ section of the `UsersAPI`.
+1. Mở [mục APIs](https://console.aws.amazon.com/apigateway/main/apis) trong bảng điều khiển API Gateway.
+2. Trong danh sách các API, nhấp vào tên API (`UsersAPI`).
+3. Bạn sẽ được chuyển hướng đến phần _Resources_ của `UsersAPI`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--resources.jpg)
 
-4. Select the `Stages` section of the `UsersAPI`.
-5. Select the `dev` stage.
-6. In the `Stage details` section - `Invoke URL`, click the copy icon to copy the _Invoke URL_ of the `dev` stage of the `UsersAPI`.
+4. Chọn phần `Stages` của `UsersAPI`.
+5. Chọn giai đoạn `dev`.
+6. Trong phần `Stage details` - `Invoke URL`, nhấp vào biểu tượng sao chép để sao chép _Invoke URL_ của giai đoạn `dev` trong `UsersAPI`.
 
 ![alt text](/images/workshop-3/API-Gateway--UsersAPI--stages.jpg)

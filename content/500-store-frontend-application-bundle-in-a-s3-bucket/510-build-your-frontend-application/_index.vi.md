@@ -1,49 +1,49 @@
 ---
-title: "Build your frontend application"
+title: "Xây dựng ứng dụng frontend của bạn"
 weight: 1
 chapter: false
 pre: " <b> 5.3 </b> "
 ---
 
-## Build frontend application
+## Xây dựng ứng dụng frontend
 
-1. First, we need to build the frontend application for production by running:
+1. Đầu tiên, chúng ta cần xây dựng ứng dụng frontend cho môi trường production bằng cách chạy:
 
    ```shell
    pnpm run build
    ```
 
-2. This will run `vite build` that produces an application bundle that is suitable to be served over a static hosting service.
+2. Lệnh này sẽ chạy `vite build` để tạo ra một gói ứng dụng phù hợp để phục vụ thông qua dịch vụ lưu trữ tĩnh.
 
-3. Check the application bundle at `dist`
+3. Kiểm tra gói ứng dụng tại thư mục `dist`
 
    ```shell
    $ tree dist
    dist
    ├── assets
-   │   ├── 401-BBhoy51U.js
-   │   ├── 403-pH7gA2BX.js
-   │   ├── 404-CUltoGn3.js
-   │   ├── 500-BEjnOsrW.js
-   │   ├── 503-Dw-MojSM.js
-   │   └── ...
+   │	​​├── 401-BBhoy51U.js
+   │	​​├── 403-pH7gA2BX.js
+   │	​​├── 404-CUltoGn3.js
+   │	​​├── 500-BEjnOsrW.js
+   │	​​├── 503-Dw-MojSM.js
+   │	​​└── ...
    ├── images
-   │   ├── favicon_light.png
-   │   ├── favicon_light.svg
-   │   ├── favicon.png
-   │   ├── favicon.svg
-   │   └── shadcn-admin.png
+   │	​​├── favicon_light.png
+   │	​​├── favicon_light.svg
+   │	​​├── favicon.png
+   │	​​├── favicon.svg
+   │	​​└── shadcn-admin.png
    └── index.html
 
    3 directories, 69 files
    ```
 
-## Serve frontend application on your local network
+## Phục vụ ứng dụng frontend trên mạng nội bộ
 
-You can use a file server to serve the application bundle (the `dist` directory) yourself.
+Bạn có thể sử dụng một máy chủ file để tự phục vụ gói ứng dụng (thư mục `dist`).
 
-For example, you can use [`vercel/serve`](https://github.com/vercel/serve) by running `pnpx server dist`.
+Ví dụ: bạn có thể sử dụng [`vercel/serve`](https://github.com/vercel/serve) bằng cách chạy `pnpx serve dist`.
 
-Now, anyone in your local network (same Wifi, LAN) can access your application.
+Bây giờ, bất kỳ ai trong mạng nội bộ của bạn (cùng Wifi, LAN) đều có thể truy cập ứng dụng của bạn.
 
 {{<figure src="/images/workshop-3/frontend-app--serve-in-local-network.png" title="" width=300pc >}}
