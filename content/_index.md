@@ -17,4 +17,8 @@ In this workshop, you will:
 
 - Deploy your frontend application using S3 _static website hosting_ feature.
 
+The final architecture looks like this
+
+![alt text](/images/diagrams/workshop-3--api-gateway--rest-api--event.drawio.svg)
+
 <!-- TODO: add diagram -->

@@ -17,4 +17,6 @@ Trong workshop này, bạn sẽ:
 
 - Triển khai ứng dụng frontend của bạn bằng tính năng _lưu trữ trang web tĩnh_ của S3.
 
-<!-- TODO: thêm sơ đồ -->
+Kiến trúc hệ thống của chúng ta sẽ trông như sau:
+
+![alt text](/images/diagrams/workshop-3--api-gateway--rest-api--event.drawio.svg)
